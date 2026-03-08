@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://348v53ad8m2g"]
+
+[ext_resource type="FontFile" uid="uid://cdadaw3x6awd8" path="res://PixelOperator8-Bold.ttf" id="1_5hcfu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bheyg"]
+bg_color = Color(0, 0, 0, 0.6666667)
+
+[node name="Score" type="CanvasLayer"]
+
+[node name="Score Panel" type="Panel" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bheyg")
+
+[node name="Score Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_top = -6.0
+offset_right = 65.0
+offset_bottom = 52.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_5hcfu")
+theme_override_font_sizes/font_size = 27
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
